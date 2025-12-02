@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Volim te</title>
+  <style>
+    :root{
+      --bg1: #fff6fa;
+      --bg2: #fff0f4;
+      --accent: #c2185b;
+      --muted: #6b5966;
+      --maxw: 800px;
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: #333;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .card{
+      width:100%;
+      max-width:var(--maxw);
+      background: white;
+      border-radius:var(--radius);
+      box-shadow: 0 10px 30px rgba(194,24,91,0.08);
+      padding:36px;
+      text-align:left;
+      line-height:1.6;
+      position:relative;
+      overflow:hidden;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:8px;
+    }
+    .logo-heart{
+      width:56px;
+      height:56px;
+      display:inline-grid;
+      place-items:center;
+      background: linear-gradient(180deg, #ffd7e6, #ffcbe0);
+      border-radius:12px;
+      box-shadow: 0 6px 18px rgba(194,24,91,0.06);
+      flex:0 0 56px;
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      color:var(--accent);
+      letter-spacing:0.2px;
+    }
+    p.lead{
+      margin-top:18px;
+      font-size:20px;
+      color:var(--muted);
+    }
+    p.small{
+      margin-top:12px;
+      color:#6b5966;
+      font-size:16px;
+    }
+    .end{
+      margin-top:34px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:14px;
+      flex-direction:column;
+    }
+    .big{
+      font-size:44px;
+      font-weight:800;
+      color:var(--accent);
+      letter-spacing:0.6px;
+      transform:translateY(6px);
+    }
+    .pulse{
+      width:120px;
+      height:120px;
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      background: radial-gradient(circle at 30% 30%, rgba(194,24,91,0.12), rgba(194,24,91,0.06) 40%, transparent 60%);
+      animation: pulse 2.2s infinite;
+    }
+    @keyframes pulse{
+      0% { transform: scale(1); opacity: 0.95 }
+      50% { transform: scale(1.06); opacity: 1 }
+      100% { transform: scale(1); opacity: 0.95 }
+    }
+    .signature{
+      margin-top:18px;
+      font-size:15px;
+      color:#8a7480;
+      text-align:center;
+    }
+    /* Responsive */
+    @media (max-width:520px){
+      .card{padding:20px}
+      .big{font-size:34px}
+      p.lead{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <header>
+      <div class="logo-heart" aria-hidden="true">
+        <!-- simple heart SVG -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 21s-7.5-4.6-9.1-6.2C1.6 12.9 2 9.5 5 7.9c1.6-.9 3.6-.4 4.7 1.1.9 1.2 2.7 1.2 3.6 0 1.1-1.6 3.1-2 4.7-1.1 3 1.6 3.4 5 2.1 7.0C19.5 16.4 12 21 12 21z" fill="#c2185b"/>
+        </svg>
+      </div>
+      <div>
+        <h1 id="title">Za Ivanu, moju jedinu ljubav</h1>
+        <div style="font-size:13px;color:#9b8892;margin-top:6px">Želim da ti ovaj, a tako i svaki slijedeći dan bude prepun ljubavi.</div>
+      </div>
+    </header>
+
+    <section aria-label="poruka">
+      <p class="lead">
+        Kada te pogledam, sretan sam, kad sam s tobom, uživam.  
+        Tvoje riječi mi daju hrabrost, tvoj osmijeh mi vraća radost, a tvoj dodir, onaj iznenadni, iza leđa, govori ono što riječi ne mogu.
+      </p>
+
+      <p class="small">
+        Želim ti zahvaliti što si uz mene u dobrim i teškim trenucima. Hvala ti na strpljenju, na razumijevanju i na svim sitnicama koje znaće puno.  
+        Svaki trenutak s tobom, vrijedi mi više nego svo blago ovog svijeta.
+		Uživaj u današnjem danu!
+      </p>
+
+      <div class="end" role="contentinfo">
+        <div class="pulse" aria-hidden="true">
+          <!-- bigger heart -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21s-7.5-4.6-9.1-6.2C1.6 12.9 2 9.5 5 7.9c1.6-.9 3.6-.4 4.7 1.1.9 1.2 2.7 1.2 3.6 0 1.1-1.6 3.1-2 4.7-1.1 3 1.6 3.4 5 2.1 7.0C19.5 16.4 12 21 12 21z" fill="#c2185b"/>
+          </svg>
+        </div>
+
+        <div class="big" aria-label="poruka-volim-te">Volim te!</div>
+
+        <div class="signature">Tvoj Jopa</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
