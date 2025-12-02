@@ -25,8 +25,11 @@
       align-items:center;
       justify-content:center;
       padding:32px;
+	  padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
     }
     .card{
+	  margin-top: 20px;
       width:100%;
       max-width:var(--maxw);
       background: white;
@@ -156,4 +159,5 @@
   </main>
 </body>
 </html>
+
 
