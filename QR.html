@@ -17,7 +17,6 @@
     html,body{height:100%}
     body{
       margin:0;
-	  margin-top: 50px;
       font-family: "Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial, sans-serif;
       background: linear-gradient(135deg, var(--bg1), var(--bg2));
       color: #333;
@@ -25,13 +24,12 @@
       align-items:center;
       justify-content:center;
       padding:32px;
-      padding-top: env(safe-area-inset-top, 50px);
+      padding-top: env(safe-area-inset-top);
       padding-left: env(safe-area-inset-left);
       padding-right: env(safe-area-inset-right);
       padding-bottom: env(safe-area-inset-bottom);
     }
     .card{
-	  margin-top: 50px;
       width:100%;
       max-width:var(--maxw);
       background: white;
@@ -161,6 +159,7 @@
   </main>
 </body>
 </html>
+
 
 
 
